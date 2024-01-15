@@ -3,15 +3,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Darker background */
-    color: #fff; /* Change text color for readability */
+    background-color: #333333; /* Darker background */
+    color: #ffffff; /* White text for readability */
 }
 
 h1, h2, h3 {
-    color: #f0e68c; /* A lighter color for headings */
+    color: #f0e68c; /* Light color for headings */
 }
 
 a {
-    color: #1e90ff; /* Brighter link color for contrast */
+    color: #1e90ff; /* Bright blue for links */
     text-decoration: none;
 }
