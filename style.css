@@ -27,10 +27,37 @@ nav ul li {
     margin: 0 10px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #444444;
+}
+
 section {
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center section content */
+}
+
+/* Styling for all hyperlinks */
+a {
+    color: #4DD0E1; /* Bright cyan for links */
+    text-decoration: none;
+}
+
+/* Bright yellow color on hover for hyperlinks */
+a:hover {
+    color: #FFEB3B; /* Bright yellow for hover effect */
+}
+
+/* Additional styling for footer */
+footer {
+    margin-top: 20px;
 }
