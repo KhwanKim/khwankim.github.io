@@ -11,6 +11,7 @@ header, footer {
     padding: 10px;
     background-color: #222222;
     color: white;
+    text-align: center; /* Center-align header and footer content */
 }
 
 nav ul {
@@ -37,15 +38,17 @@ nav ul li a:hover {
     background-color: #444444;
 }
 
+/* Center-align all section content */
 section {
     padding: 20px;
-    margin-bottom: 20px;
+    margin: auto; /* Auto margins for horizontal centering */
+    max-width: 800px; /* Max width for the content */
+    text-align: left; /* Align text to the left within the centered section */
 }
 
-.intro-text {
-    text-align: left; /* Aligns intro text to the left */
-    max-width: 800px; /* Sets a max width for readability */
-    margin: auto; /* Centers the text block */
+/* Center-align all headings within sections */
+section h1, section h2 {
+    text-align: center;
 }
 
 /* Styling for all hyperlinks */
@@ -62,4 +65,13 @@ a:hover {
 /* Additional styling for footer */
 footer {
     margin-top: 20px;
+}
+
+#research ul, #home ul, #cv ul {
+    padding-left: 0; /* Remove padding for lists */
+    list-style-position: inside; /* Position list bullets inside the content area */
+}
+
+#home ul {
+    list-style-type: none; /* No bullets for the list in the home section */
 }
