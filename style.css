@@ -1,5 +1,5 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -40,7 +40,12 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin-bottom: 20px;
-    text-align: left; /* Aligns text to left */
+}
+
+.intro-text {
+    text-align: left; /* Aligns intro text to the left */
+    max-width: 800px; /* Sets a max width for readability */
+    margin: auto; /* Centers the text block */
 }
 
 /* Styling for all hyperlinks */
@@ -59,18 +64,8 @@ footer {
     margin-top: 20px;
 }
 
-#home {
-    text-align: center; /* Centering text in Home section */
+#research ul, #home ul {
+    text-align: left; /* Ensures text alignment is to the left */
+    padding-left: 20px; /* Adjusts the indentation of list items */
+    list-style-type: disc; /* Adds bullet points */
 }
-
-#home h1 {
-    margin-bottom: 0.5em;
-}
-
-#home p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto; /* Centers the text block */
-}
-``
