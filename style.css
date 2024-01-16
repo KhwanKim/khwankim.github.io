@@ -63,9 +63,3 @@ a:hover {
 footer {
     margin-top: 20px;
 }
-
-#research ul, #home ul {
-    text-align: left; /* Ensures text alignment is to the left */
-    padding-left: 20px; /* Adjusts the indentation of list items */
-    list-style-type: disc; /* Adds bullet points */
-}
