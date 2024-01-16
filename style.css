@@ -54,3 +54,11 @@ section h1, section h2 {
 /* Styling for all hyperlinks */
 a {
     color: #4DD0E1; /* Bright
+} 
+
+.cv-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* You can adjust the height as needed */
+}
