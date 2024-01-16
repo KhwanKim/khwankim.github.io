@@ -78,12 +78,12 @@ nav ul, #home ul {
     padding-left: 20px; /* space inside the list */
 }
 
-/*Center the CV download link /
+/*Center the CV download link */
 #cv .cv-link-container {
-display: flex;
-justify-content: center;
-align-items: center;
-height: auto; / adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; / adjust height as needed */
 }
 
 #cv .cv-link-container p {
