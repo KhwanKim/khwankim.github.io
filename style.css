@@ -53,12 +53,43 @@ section h1, section h2 {
 
 /* Styling for all hyperlinks */
 a {
-    color: #4DD0E1; /* Bright
-} 
+    color: #4DD0E1; /* Bright cyan for links */
+    text-decoration: none;
+}
 
-.cv-link-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* You can adjust the height as needed */
+/* Bright yellow color on hover for hyperlinks */
+a:hover {
+    color: #FFEB3B; /* Bright yellow for hover effect */
+}
+
+/* Additional styling for footer */
+footer {
+    margin-top: 20px;
+}
+
+/* Reset list styles for the navigation and home section lists */
+nav ul, #home ul {
+    list-style-type: none;
+}
+
+/* Add bullet points to lists in research and CV sections */
+#research ul, #cv ul {
+    list-style-type: disc; /* default bullet points */
+    padding-left: 20px; /* space inside the list */
+}
+
+/*Center the CV download link /
+#cv .cv-link-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: auto; / adjust height as needed */
+}
+
+#cv .cv-link-container p {
+margin: 0; /* Remove default paragraph margin */
+}
+
+#cv .cv-link-container a {
+display: block; /* Ensure the anchor text is centered */
 }
