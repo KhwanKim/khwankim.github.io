@@ -1,11 +1,10 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #333333; /* Dark background */
     color: #ffffff; /* White text for readability */
-    text-align: center; /* Center text */
 }
 
 header, footer {
@@ -41,9 +40,7 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center section content */
+    text-align: left; /* Aligns text to left */
 }
 
 /* Styling for all hyperlinks */
@@ -62,9 +59,18 @@ footer {
     margin-top: 20px;
 }
 
-#research ul {
-    text-align: left; /* Ensures text alignment is to the left */
-    padding-left: 20px; /* Adjusts the indentation of list items */
-    list-style-type: disc; /* Adds bullet points, optional */
+#home {
+    text-align: center; /* Centering text in Home section */
 }
 
+#home h1 {
+    margin-bottom: 0.5em;
+}
+
+#home p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; /* Centers the text block */
+}
+``
