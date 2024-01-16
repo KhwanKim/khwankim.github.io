@@ -53,25 +53,4 @@ section h1, section h2 {
 
 /* Styling for all hyperlinks */
 a {
-    color: #4DD0E1; /* Bright cyan for links */
-    text-decoration: none;
-}
-
-/* Bright yellow color on hover for hyperlinks */
-a:hover {
-    color: #FFEB3B; /* Bright yellow for hover effect */
-}
-
-/* Additional styling for footer */
-footer {
-    margin-top: 20px;
-}
-
-#research ul, #home ul, #cv ul {
-    padding-left: 0; /* Remove padding for lists */
-    list-style-position: inside; /* Position list bullets inside the content area */
-}
-
-#home ul {
-    list-style-type: none; /* No bullets for the list in the home section */
-}
+    color: #4DD0E1; /* Bright
