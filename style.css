@@ -198,3 +198,9 @@ Copy code
     color: #dddddd; /* Slightly lighter or different color for distinction */
     margin-bottom: 5px; /* Space before the next line */
 }
+
+.paper-stage {
+    font-weight: normal; /* Ensure the text is not bold */
+    color: #dddddd; /* Slightly lighter or different color for distinction */
+    margin-bottom: 5px; /* Space before the next line */
+}
