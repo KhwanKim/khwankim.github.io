@@ -92,5 +92,23 @@
     <footer>
         <p>© 2024 Khwan Kim</p>
     </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var abstractButtons = document.querySelectorAll(".abstract-btn");
+
+    abstractButtons.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            this.classList.toggle("abstract-active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>
