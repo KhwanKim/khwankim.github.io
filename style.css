@@ -83,13 +83,47 @@ nav ul, #home ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; / adjust height as needed */
+    height: auto; /* adjust height as needed */
 }
 
 #cv .cv-link-container p {
-margin: 0; /* Remove default paragraph margin */
+    margin: 0; /* Remove default paragraph margin */
 }
 
 #cv .cv-link-container a {
-display: block; /* Ensure the anchor text is centered */
+    display: block; /* Ensure the anchor text is centered */
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 100%; /* make the image responsive */
+    max-width: 300px; /* maximum width */
+    height: auto; /* maintain aspect ratio */
+    border-radius: 50%; /* make the photo round */
+    margin: 10px auto; /* add some space around the photo and center it */
+    display: block; /* ensure it's a block-level element to apply margin auto */
+}
+
+/* Research paper description styling */
+.paper {
+    background-color: #444444; /* Lighter than the main background for contrast */
+    padding: 15px;
+    margin-bottom: 20px; /* space between each paper */
+    border-radius: 5px; /* optional: rounded corners */
+}
+
+.paper h3 {
+    margin-top: 0;
+}
+
+.paper a {
+    /* styles for the 'Read Paper' link */
+    background-color: #4DD0E1; /* match your link color or make it stand out */
+    padding: 5px 10px;
+    border-radius: 4px; /* match your other buttons */
+    color: white;
+}
+
+.paper a:hover {
+    background-color: #FFEB3B; /* hover effect */
 }
