@@ -198,3 +198,15 @@ Copy code
     color: #dddddd; /* Slightly lighter or different color for distinction */
     margin-bottom: 5px; /* Space before the next line */
 }
+
+/* New styles for research sub-sections */
+.research-category {
+    margin-bottom: 30px;
+}
+
+.research-category h3 {
+    border-bottom: 2px solid #4DD0E1;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #FFEB3B;
+}
