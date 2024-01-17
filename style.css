@@ -157,3 +157,44 @@ nav ul, #home ul {
     border-radius: 4px; /* Rounded corners for consistency */
 }
 
+
+To add lines for coauthor names and the stage of each paper, you can expand the structure of each paper in your HTML and then style those elements in your CSS. Here's how you can do it:
+
+Updated index.html:
+html
+Copy code
+<!-- ... other parts of your HTML ... -->
+
+<section id="research">
+    <h2>Research Papers</h2>
+    <div class="paper">
+        <h3>Title of Paper 1</h3>
+        <p class="coauthors">Coauthor 1, Coauthor 2, Coauthor 3</p> <!-- Coauthors line -->
+        <p class="paper-stage">Under 2nd Review at Journal Name</p> <!-- Paper stage and journal line -->
+        <p><a href="paper1.pdf" target="_blank">Read Paper</a></p>
+        <button class="abstract-btn">Abstract</button>
+        <p class="abstract-content">This is a brief summary of paper 1...</p>
+        <!-- Add more details if needed -->
+    </div>
+    <!-- Repeat the structure above for more papers -->
+</section>
+
+<!-- ... rest of your HTML ... -->
+Update in style.css:
+css
+Copy code
+/* ... existing styles ... */
+
+/* Style for coauthors line */
+.coauthors {
+    font-style: italic; /* Italicize coauthors for emphasis */
+    color: #cccccc; /* Lighter color for less emphasis */
+    margin-bottom: 5px; /* Space before the next line */
+}
+
+/* Style for paper stage and journal line */
+.paper-stage {
+    font-weight: bold; /* Make stage and journal bold for emphasis */
+    color: #dddddd; /* Slightly lighter or different color for distinction */
+    margin-bottom: 5px; /* Space before the next line */
+}
