@@ -201,7 +201,7 @@ Copy code
 
 /* New styles for research sub-sections */
 .research-category {
-    margin-bottom: 30px;
+    margin-bottom: 50px; /* Increased from 30px to 50px for more vertical space */
 }
 
 .research-category h3 {
@@ -210,3 +210,4 @@ Copy code
     margin-bottom: 20px;
     color: #FFEB3B;
 }
+
