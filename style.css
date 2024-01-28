@@ -42,7 +42,7 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin: auto; /* Auto margins for horizontal centering */
-    max-width: 800px; /* Max width for the content */
+    max-width: 1000; /* Max width for the content */
     text-align: left; /* Align text to the left within the centered section */
 }
 
@@ -225,14 +225,18 @@ Copy code
     border-radius: 5px;
 }
 
-.paper-content, .paper-figure {
-    flex: 1; /* Allows both children to grow and take up equal space */
-    margin-right: 10px; /* Adds some space between the text and the figure */
+.paper-content {
+    flex: 3; /* Gives the text content more room to grow */
+    margin-right: 20px; /* Adds some space between the text and the figure */
+}
+
+.paper-figure {
+    flex: 2; /* Allows the figure to grow, but not as much as the text content */
 }
 
 .paper-figure img {
     width: 100%; /* Makes the image responsive */
-    max-width: 200px; /* Maximum width of the image */
+    max-width: 300px; /* Increase this value to make the image larger */
     height: auto; /* Keeps the aspect ratio */
     border-radius: 4px; /* Optional: Adds rounded corners to the image */
 }
