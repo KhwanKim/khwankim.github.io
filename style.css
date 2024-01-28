@@ -231,13 +231,17 @@ Copy code
 }
 
 .paper-figure {
-    flex: 2; /* Allows the figure to grow, but not as much as the text content */
+    flex: 2 1 300px; /* flex-grow: 2, flex-shrink: 1, flex-basis: 300px */
+    max-width: 400px; /* Adjust as needed */
 }
 
 .paper-figure img {
     width: 100%; /* Makes the image responsive */
-    max-width: 300px; /* Increase this value to make the image larger */
+    max-width: 400px; /* Maximum width of the image, adjust as needed */
+    min-width: 200px; /* Minimum width of the image, adjust as needed */
     height: auto; /* Keeps the aspect ratio */
     border-radius: 4px; /* Optional: Adds rounded corners to the image */
+    object-fit: cover; /* Optional: Covers the area without stretching the image */
 }
+
 
