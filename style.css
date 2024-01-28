@@ -236,4 +236,11 @@ Copy code
     object-fit: cover; /* Optional: Covers the area without stretching the image */
 }
 
+.paper-overview {
+    color: #cccccc; /* Lighter color for less emphasis */
+    margin: 10px 0; /* Space above and below the paragraph */
+    font-size: 0.9em; /* Slightly reduced font size; adjust as needed */
+    /* Add any other styles you need, like line-height */
+}
+
 
