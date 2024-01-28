@@ -187,7 +187,7 @@ Copy code
 /* Style for paper stage and journal line */
 .paper-stage {
     font-weight: normal; /* Make stage and journal bold for emphasis */
-    color: #dddddd; /* Slightly lighter or different color for distinction */
+    color: #cccccc; /* Slightly lighter or different color for distinction */
     margin-bottom: 5px; /* Space before the next line */
 }
 
@@ -237,9 +237,9 @@ Copy code
 }
 
 .paper-overview {
-    color: #cccccc; /* Lighter color for less emphasis */
+    color: #dddddd; /* Lighter color for less emphasis */
     margin: 10px 0; /* Space above and below the paragraph */
-    font-size: 0.9em; /* Slightly reduced font size; adjust as needed */
+    font-size: 0.8em; /* Slightly reduced font size; adjust as needed */
     /* Add any other styles you need, like line-height */
 }
 
