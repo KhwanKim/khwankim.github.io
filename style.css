@@ -178,17 +178,11 @@ Copy code
 /* ... existing styles ... */
 
 /* Style for coauthors line */
-.coauthors {
-    font-style: italic; /* Italicize coauthors for emphasis */
-    color: #cccccc; /* Lighter color for less emphasis */
-    margin-bottom: 5px; /* Space before the next line */
-}
 
-/* Style for paper stage and journal line */
-.paper-stage {
-    font-weight: normal; /* Make stage and journal bold for emphasis */
-    color: #cccccc; /* Slightly lighter or different color for distinction */
-    margin-bottom: 5px; /* Space before the next line */
+.paper-content .coauthors, 
+.paper-content .paper-stage {
+    color: #cccccc; /* Ensuring the font color is the same */
+    margin-bottom: 5px;
 }
 
 /* New styles for research sub-sections */
