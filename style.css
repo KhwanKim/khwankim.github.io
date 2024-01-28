@@ -214,3 +214,26 @@ Copy code
     margin-bottom: 20px; /* Space between the subsection title and the first paper */
     color: #FFEB3B;
 }
+
+.paper {
+    display: flex; /* Enables Flexbox */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    justify-content: space-between; /* Adds space between the text and the figure */
+    background-color: #444444; /* Existing styles */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.paper-content, .paper-figure {
+    flex: 1; /* Allows both children to grow and take up equal space */
+    margin-right: 10px; /* Adds some space between the text and the figure */
+}
+
+.paper-figure img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 200px; /* Maximum width of the image */
+    height: auto; /* Keeps the aspect ratio */
+    border-radius: 4px; /* Optional: Adds rounded corners to the image */
+}
+
