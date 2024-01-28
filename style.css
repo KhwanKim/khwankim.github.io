@@ -197,7 +197,7 @@ Copy code
 }
 
 .research-category + .research-category { /* Selects every .research-category that is preceded by another .research-category */
-    margin-top: 250px; /* Adds space above each subsection, except the first */
+    margin-top: 500px; /* Adds space above each subsection, except the first */
 }
 
 .research-category h3 {
