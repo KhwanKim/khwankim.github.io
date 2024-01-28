@@ -193,11 +193,11 @@ Copy code
 
 /* New styles for research sub-sections */
 .research-category {
-    margin-bottom: 80px; /* Keeping the original bottom margin */
+    margin-bottom: 100px; /* Keeping the original bottom margin */
 }
 
 .research-category + .research-category { /* Selects every .research-category that is preceded by another .research-category */
-    margin-top: 120px; /* Adds space above each subsection, except the first */
+    margin-top: 150px; /* Adds space above each subsection, except the first */
 }
 
 .research-category h3 {
