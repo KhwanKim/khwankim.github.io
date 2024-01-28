@@ -42,7 +42,7 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin: auto; /* Auto margins for horizontal centering */
-    max-width: 1000; /* Max width for the content */
+    max-width: 900px; /* Max width for the content */
     text-align: left; /* Align text to the left within the centered section */
 }
 
