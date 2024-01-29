@@ -239,13 +239,10 @@ Copy code
 
 /* Styles for the animation container */
 .animations-container {
-    width: 100%; /* Full width of the container */
-    max-width: 300px; /* Adjust the maximum width of the animation */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 4px; /* Optional: Adds rounded corners to the animation */
-    border: none; /* Remove default iframe border */
+    display: flex;
+    flex-direction: column; /* Display the animation below the figure */
+    align-items: center; /* Center-align the animation horizontally */
     margin-top: 10px; /* Adjust the margin as needed */
-    /* Add other styles like padding or shadows if needed */
 }
 
 .animation {
