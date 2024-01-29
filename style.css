@@ -237,4 +237,18 @@ Copy code
     /* Add any other styles you need, like line-height */
 }
 
+.animations-container {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly around items */
+    align-items: center; /* Aligns items vertically */
+    margin-top: 20px; /* Adds some space above the container */
+}
+
+.animation {
+    width: 45%; /* Each animation takes up 45% of the container width */
+    height: 200px; /* Specify the height of the animations */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Remove default iframe border */
+    /* Add other styles like padding or shadows if needed */
+}
 
