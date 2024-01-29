@@ -257,9 +257,3 @@ Copy code
     /* Add other styles like padding or shadows if needed */
 }
 
-.paper-figures {
-    display: flex;
-    flex-direction: column; /* Display figures and animations vertically */
-    align-items: center; /* Center-align the content horizontally */
-}
-
