@@ -202,10 +202,10 @@ Copy code
 }
 
 .paper {
-    display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    align-items: center; /* Align child elements in the center */
-    background-color: #444444;
+    display: flex; /* Enables Flexbox */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    justify-content: space-between; /* Adds space between the text and the figure */
+    background-color: #444444; /* Existing styles */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -217,7 +217,6 @@ Copy code
 }
 
 .paper-figure {
-    width: 100%; /* Take full width of the container */
     flex: 2 1 300px; /* flex-grow: 2, flex-shrink: 1, flex-basis: 300px */
     max-width: 400px; /* Adjust as needed */
 }
@@ -239,21 +238,16 @@ Copy code
 }
 
 .animations-container {
-    width: 100%; /* Take full width of the container */
     display: flex;
-    justify-content: center; /* Center the animation */
+    justify-content: space-around; /* Distributes space evenly around items */
+    align-items: center; /* Aligns items vertically */
     margin-top: 20px; /* Adds some space above the container */
-    /* Keep other styles as is */
 }
-
 
 .animation {
-    width: 80%; /* Adjust width as needed */
-    height: 500px; /* Adjust height as needed */
-    border-radius: 10px;
-    border: none;
-    margin: 10px;
+    width: 45%; /* Each animation takes up 45% of the container width */
+    height: 200px; /* Specify the height of the animations */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Remove default iframe border */
+    /* Add other styles like padding or shadows if needed */
 }
-
-
-
