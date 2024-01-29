@@ -248,9 +248,11 @@ Copy code
 .animation {
     width: 100%; /* Full width of the container */
     max-width: 300px; /* Adjust the maximum width of the animation */
-    height: auto; /* Maintain aspect ratio */
+    height: 400px; /* Set a specific height for the iframe */
     border-radius: 4px; /* Optional: Adds rounded corners to the animation */
     border: none; /* Remove default iframe border */
+    overflow: auto; /* Enable scrolling if content exceeds the specified height */
     /* Add other styles like padding or shadows if needed */
 }
+
 
