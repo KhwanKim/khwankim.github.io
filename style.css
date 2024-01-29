@@ -232,7 +232,7 @@ Copy code
 }
 
 .paper-figure img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional: Adds a shadow to make the image pop out */
     z-index: 10; /* Ensure the enlarged image is above other content */
