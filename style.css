@@ -219,6 +219,7 @@ Copy code
 .paper-figure {
     flex: 2 1 300px; /* flex-grow: 2, flex-shrink: 1, flex-basis: 300px */
     max-width: 400px; /* Adjust as needed */
+    overflow: visible; /* or 'hidden', depending on the desired effect */
 }
 
 .paper-figure img {
@@ -229,6 +230,14 @@ Copy code
     border-radius: 4px; /* Optional: Adds rounded corners to the image */
     object-fit: cover; /* Optional: Covers the area without stretching the image */
 }
+
+.paper-figure img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional: Adds a shadow to make the image pop out */
+    z-index: 10; /* Ensure the enlarged image is above other content */
+}
+
 
 .paper-overview {
     color: #dddddd; /* Lighter color for less emphasis */
