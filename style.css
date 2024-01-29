@@ -247,3 +247,11 @@ Copy code
     /* Add any other styles you need, like line-height */
 }
 
+footer a {
+    color: #4DD0E1; /* Use the same color as other links for consistency */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer a:hover {
+    color: #FFEB3B; /* Change color on hover */
+}
