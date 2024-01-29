@@ -248,8 +248,8 @@ Copy code
 
 
 .animation {
-    width: 100%; /* Full width of the container */
-    height: 50vh; /* 50% of the viewport height */
+    width: 80%; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
     border-radius: 10px;
     border: none;
     margin: 10px;
