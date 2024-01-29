@@ -185,16 +185,14 @@ Copy code
     margin-bottom: 5px;
 }
 
-/* Style for each individual research-category */
 .research-category {
-    margin-bottom: 40px; /* Space at the bottom of each category */
-    /* Other styles... */
+    margin-bottom: 40px !important; /* Space at the bottom of each category */
 }
 
-/* Add space between research categories */
 .research-category + .research-category {
-    margin-top: 80px; /* Adjust this value as needed for more space */
+    margin-top: 80px !important; /* Adjust this value as needed for more space */
 }
+
 
 .research-category h3 {
     border-bottom: 2px solid #4DD0E1;
