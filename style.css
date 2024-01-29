@@ -255,3 +255,16 @@ footer a {
 footer a:hover {
     color: #FFEB3B; /* Change color on hover */
 }
+
+#contact {
+    text-align: center; /* Center-align text */
+    display: flex; /* Use flexbox to center vertically and horizontally */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#contact p {
+    margin: 0; /* Remove default margins if necessary */
+}
+
