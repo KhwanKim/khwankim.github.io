@@ -239,10 +239,13 @@ Copy code
 
 /* Styles for the animation container */
 .animations-container {
-    display: flex;
-    flex-direction: column; /* Display the animation below the figure */
-    align-items: center; /* Center-align the animation horizontally */
+    width: 100%; /* Full width of the container */
+    max-width: 300px; /* Adjust the maximum width of the animation */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: Adds rounded corners to the animation */
+    border: none; /* Remove default iframe border */
     margin-top: 10px; /* Adjust the margin as needed */
+    /* Add other styles like padding or shadows if needed */
 }
 
 .animation {
@@ -252,5 +255,11 @@ Copy code
     border-radius: 4px; /* Optional: Adds rounded corners to the animation */
     border: none; /* Remove default iframe border */
     /* Add other styles like padding or shadows if needed */
+}
+
+.paper-figures {
+    display: flex;
+    flex-direction: column; /* Display figures and animations vertically */
+    align-items: center; /* Center-align the content horizontally */
 }
 
