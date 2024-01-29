@@ -202,10 +202,10 @@ Copy code
 }
 
 .paper {
-    display: flex; /* Enables Flexbox */
-    align-items: flex-start; /* Aligns items to the start of the flex container */
-    justify-content: space-between; /* Adds space between the text and the figure */
-    background-color: #444444; /* Existing styles */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Align child elements in the center */
+    background-color: #444444;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -217,6 +217,7 @@ Copy code
 }
 
 .paper-figure {
+    width: 100%; /* Take full width of the container */
     flex: 2 1 300px; /* flex-grow: 2, flex-shrink: 1, flex-basis: 300px */
     max-width: 400px; /* Adjust as needed */
 }
@@ -238,11 +239,13 @@ Copy code
 }
 
 .animations-container {
+    width: 100%; /* Take full width of the container */
     display: flex;
-    justify-content: space-around; /* Distributes space evenly around items */
-    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Center the animation */
     margin-top: 20px; /* Adds some space above the container */
+    /* Keep other styles as is */
 }
+
 
 .animation {
     width: 100%; /* Full width of the container */
