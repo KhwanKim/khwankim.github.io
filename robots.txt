@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://khwankim.github.io/sitemap.xml
