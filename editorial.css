@@ -187,12 +187,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   max-width: 23em;
   text-wrap: pretty;
 }
-.methods {
-  font: 15px/1.6 var(--sans);
-  color: var(--muted);
-  margin-top: 26px;
-  max-width: 34em;
-}
 
 .content { counter-reset: sec; }
 section { position: relative; padding-top: 84px; }
