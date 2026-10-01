@@ -216,6 +216,10 @@ section { position: relative; padding-top: 84px; }
   color: var(--ink);
   text-wrap: balance;
 }
+.unnumbered .section-head h2::before { display: none; }
+.unnumbered { padding-top: 56px; }
+.unnumbered .section-head { border-top-width: 1px; border-top-color: var(--rule-strong); }
+.unnumbered .section-head h2 { font-size: 24px; }
 .section-head h2::before {
   counter-increment: sec;
   content: counter(sec, decimal-leading-zero);
