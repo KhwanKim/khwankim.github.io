@@ -1,11 +1,12 @@
 /* Personal academic homepage — system fonts, native links, no runtime dependencies. */
 :root {
   color-scheme: dark;
-  --paper: #191b1e;
-  --ink: #e1e2e3;
-  --muted: #a5a9ae;
-  --link: #a7bfd6;
-  --rule: #373b40;
+  --paper: #191a1b;
+  --ink: #e7e4df;
+  --muted: #a6a5a2;
+  --link: #cfb994;
+  --rule: #363635;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 * { box-sizing: border-box; }
@@ -16,25 +17,34 @@ a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; }
 ::selection { background: #3a4c60; color: #fff; }
-.page { max-width: 840px; margin: 0 auto; padding: 70px 40px 36px; }
+.page { display: grid; grid-template-columns: 225px minmax(0, 1fr); gap: 76px; max-width: 1130px; margin: 0 auto; padding: 72px 40px 40px; }
+.masthead { position: sticky; top: 60px; align-self: start; }
+.content { min-width: 0; }
 .skip { position: fixed; top: 12px; left: 12px; padding: 8px 15px; background: var(--ink); color: var(--paper); transform: translateY(-180%); }
 .skip:focus { transform: none; }
-.name { font-size: 34px; line-height: 1.2; font-weight: 600; letter-spacing: -1px; }
+.name { font: 400 40px/1.15 var(--serif); letter-spacing: -1.2px; }
+.role { font-size: 13px; color: var(--muted); line-height: 1.7; margin-top: 18px; }
+.affiliation { display: inline-block; font-size: 13px; margin-top: 7px; }
 .name a { color: var(--ink); text-decoration: none; }
-.reach { display: flex; flex-wrap: wrap; gap: 5px 22px; font-size: 13px; margin-top: 15px; }
+.reach { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; font-size: 12px; margin-top: 27px; }
+.reach a { color: var(--muted); }
+.reach a:hover { color: var(--link); }
 .ext { font-size: 10px; color: var(--muted); margin-left: 2px; }
-.intro { margin: 32px 0 25px; max-width: 700px; }
+.intro { margin: 0 0 44px; max-width: 700px; }
+.intro p:first-child { font-size: 17px; line-height: 1.8; }
+.intro p + p { color: var(--muted); font-size: 13px; line-height: 1.8; }
 .intro p + p { margin-top: 13px; }
-.index { display: flex; flex-wrap: wrap; gap: 6px 23px; font-size: 13px; padding-bottom: 25px; border-bottom: 1px solid var(--rule); }
+.index { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; font-size: 13px; margin-top: 34px; padding-top: 23px; border-top: 1px solid var(--rule); max-width: 180px; }
 .index a { color: var(--muted); }
 .index a:hover { color: var(--ink); }
-section { padding-top: 34px; }
-.section-head { margin-bottom: 24px; }
-h2 { font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.25px; }
+section { padding-top: 15px; margin-top: 30px; }
+#publications { margin-top: 0; }
+.section-head { margin-bottom: 28px; padding-top: 19px; border-top: 1px solid var(--rule); }
+h2 { font: 400 25px/1.3 var(--serif); letter-spacing: -.3px; }
 .section-note { font-size: 12px; color: var(--muted); margin-top: 7px; }
-.paper { margin-bottom: 27px; }
+.paper { margin-bottom: 32px; }
 .paper:last-child { margin-bottom: 0; }
-h3 { font-size: 15px; line-height: 1.6; font-weight: 550; }
+h3 { font: 400 20px/1.45 var(--serif); }
 h3 a { color: var(--ink); }
 h3 a:hover { color: var(--link); }
 .authors { color: var(--muted); font-size: 13px; margin-top: 4px; }
@@ -44,9 +54,11 @@ h3 a:hover { color: var(--link); }
 .status { margin-left: 10px; color: var(--muted); }
 .note { font-size: 11px; }
 .recognition { font-size: 12px; color: var(--muted); margin-top: 7px; line-height: 1.6; }
-.links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 12px; margin-top: 5px; }
+.links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 12px; margin-top: 8px; }
+.links a { text-decoration: underline; text-decoration-color: #635b4f; text-underline-offset: 4px; }
+.links a:hover { text-decoration-color: currentColor; }
 .project { margin-bottom: 20px; }
-.project h3 { font-weight: 500; }
+.project h3 { font: 500 15px/1.65 var(--sans); }
 .rows { margin-top: -7px; }
 .row { display: grid; grid-template-columns: 75px minmax(0,1fr); gap: 18px; padding: 9px 0; }
 .row dt { font-size: 13px; color: var(--muted); }
@@ -56,23 +68,37 @@ h3 a:hover { color: var(--link); }
 .row ul { list-style: none; }
 .row li + li { margin-top: 4px; }
 .aside-note { margin-top: 18px; font-size: 13px; color: var(--muted); }
-.sub { font-size: 14px; font-weight: 500; margin: 22px 0 15px; }
+.sub { font-family: var(--sans); font-size: 14px; font-weight: 500; margin: 22px 0 15px; }
 .service { font-size: 13px; }
 .colophon { border-top: 1px solid var(--rule); padding-top: 23px; margin-top: 40px; font-size: 12px; color: var(--muted); }
 .small { font-size: 11px; margin-top: 14px; }
-@media (max-width: 600px) {
-  .page { padding: 38px 24px 28px; }
-  .name { font-size: 30px; }
-  .reach { gap: 5px 18px; }
-  .intro { margin-top: 28px; }
-  .index { gap: 8px 20px; }
+@media (max-width: 900px) {
+  .page { grid-template-columns: 190px minmax(0, 1fr); gap: 40px; padding: 50px 30px; }
+  .name { font-size: 36px; }
+}
+@media (max-width: 700px) {
+  .page { display: block; padding: 36px 24px 28px; }
+  .masthead { position: static; display: grid; grid-template-columns: 1fr auto; gap: 0 24px; }
+  .name { font-size: 35px; }
+  .role { margin-top: 12px; font-size: 12px; }
+  .affiliation { font-size: 12px; }
+  .reach { margin-top: 5px; font-size: 11px; gap: 9px; }
+  .index { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: 8px 20px; max-width: none; margin: 25px 0 30px; padding-top: 17px; font-size: 12px; }
+  .intro { margin-bottom: 26px; }
+  .intro p:first-child { font-size: 16px; }
+  h3 { font-size: 19px; }
   .row { grid-template-columns: 61px minmax(0,1fr); gap: 14px; }
   .status { display: block; margin-left: 0; }
+}
+@media (max-width: 400px) {
+  .masthead { display: block; }
+  .reach { flex-direction: row; flex-wrap: wrap; gap: 6px 17px; margin-top: 18px; }
 }
 @media print {
   :root { color-scheme: light; --paper: #fff; --ink: #222; --muted: #555; --link: #222; --rule: #ccc; }
   body { font-size: 11pt; }
-  .page { max-width: none; padding: 0; }
+  .page { display: block; max-width: none; padding: 0; }
+  .masthead { position: static; margin-bottom: 25px; }
   .index, .skip { display: none; }
   .paper, .row { break-inside: avoid; }
 }
